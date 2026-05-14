@@ -25,6 +25,7 @@ import nord from "./theme/nord.json" with { type: "json" }
 import osakaJade from "./theme/osaka-jade.json" with { type: "json" }
 import onedark from "./theme/one-dark.json" with { type: "json" }
 import opencode from "./theme/opencode.json" with { type: "json" }
+import openbiomed from "./theme/openbiomed.json" with { type: "json" }
 import orng from "./theme/orng.json" with { type: "json" }
 import lucentOrng from "./theme/lucent-orng.json" with { type: "json" }
 import palenight from "./theme/palenight.json" with { type: "json" }
@@ -107,6 +108,7 @@ export const DEFAULT_THEMES: Record<string, ThemeJson> = {
   nord,
   ["one-dark"]: onedark,
   ["osaka-jade"]: osakaJade,
+  openbiomed,
   opencode,
   orng,
   ["lucent-orng"]: lucentOrng,
@@ -155,7 +157,7 @@ const [store, setStore] = createStore<State>({
   themes: listThemes(),
   mode: "dark",
   lock: undefined,
-  active: "opencode",
+  active: "openbiomed",
   ready: false,
 })
 
@@ -320,8 +322,8 @@ export const { use: useTheme, provider: ThemeProvider } = createSimpleContext({
         }
         draft.mode = mode
         draft.lock = lock
-        const active = config.theme ?? kv.get("theme", "opencode")
-        draft.active = typeof active === "string" ? active : "opencode"
+        const active = config.theme ?? kv.get("theme", "openbiomed")
+        draft.active = typeof active === "string" ? active : "openbiomed"
         draft.ready = false
       }),
     )
@@ -340,7 +342,7 @@ export const { use: useTheme, provider: ThemeProvider } = createSimpleContext({
             syncThemes()
           })
           .catch(() => {
-            setStore("active", "opencode")
+            setStore("active", "openbiomed")
           }),
       ]).finally(() => {
         setStore("ready", true)
@@ -359,7 +361,7 @@ export const { use: useTheme, provider: ThemeProvider } = createSimpleContext({
             systemTheme = undefined
             syncThemes()
             if (store.active === "system") {
-              setStore("active", "opencode")
+              setStore("active", "openbiomed")
             }
             return
           }
@@ -370,7 +372,7 @@ export const { use: useTheme, provider: ThemeProvider } = createSimpleContext({
           systemTheme = undefined
           syncThemes()
           if (store.active === "system") {
-            setStore("active", "opencode")
+            setStore("active", "openbiomed")
           }
         })
     }

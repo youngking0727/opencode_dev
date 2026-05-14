@@ -1,4 +1,5 @@
 import { Prompt, type PromptRef } from "@tui/component/prompt"
+import { RGBA } from "@opentui/core"
 import { createEffect, createSignal, onMount } from "solid-js"
 import { Logo } from "../component/logo"
 import { useProject } from "../context/project"
@@ -65,7 +66,7 @@ export function Home() {
         <box height={4} minHeight={0} flexShrink={1} />
         <box flexShrink={0}>
           <TuiPluginRuntime.Slot name="home_logo" mode="replace">
-            <Logo />
+            <Logo ink={RGBA.fromHex("#60a5fa")} />
           </TuiPluginRuntime.Slot>
         </box>
         <box height={1} minHeight={0} flexShrink={1} />
