@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="docs/logo.svg" alt="OpenBioMedClaw" width="320">
+  <img src="docs/logo.svg" alt="OpenBioMedAgent" width="320">
 </p>
 
 <p align="center">
-  <strong>OpenBioMedClaw</strong> — 生物医药领域的 AI Agent
+  <strong>OpenBioMedAgent</strong> — 生物医药领域的 AI Agent
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 ## 这是什么
 
-OpenBioMedClaw 是一个面向生物医药领域的任务型 AI Agent,基于 [OpenCode](https://github.com/anomalyco/opencode) fork 改造,
+OpenBioMedAgent 是一个面向生物医药领域的任务型 AI Agent,基于 [OpenCode](https://github.com/anomalyco/opencode) fork 改造,
 加入领域专属工具(PubMed、RDKit、ClinicalTrials.gov 等)和生物医药专家 prompt,
 用于辅助药企、Biotech、CRO、医院科研机构的研究员、计算化学家、生信工程师、医学经理等日常研发工作。
 

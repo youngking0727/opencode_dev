@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="docs/logo.svg" alt="OpenBioMedClaw" width="320">
+  <img src="docs/logo.svg" alt="OpenBioMedAgent" width="320">
 </p>
 
 <p align="center">
-  <strong>OpenBioMedClaw</strong> — 生物医药领域的 AI Agent
+  <strong>OpenBioMedAgent</strong> — 生物医药领域的 AI Agent
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 ## What is this
 
-OpenBioMedClaw is a task-oriented AI agent for biomedical research and drug discovery.
+OpenBioMedAgent is a task-oriented AI agent for biomedical research and drug discovery.
 It is built as a fork of [OpenCode](https://github.com/anomalyco/opencode), extended with
 domain-specific tools (PubMed, RDKit, ClinicalTrials.gov, etc.) and a biomedical expert prompt,
 designed to assist researchers, computational chemists, bioinformaticians, and project managers

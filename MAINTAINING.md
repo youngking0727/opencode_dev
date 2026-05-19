@@ -1,4 +1,4 @@
-# OpenBioMedClaw — Fork 维护规范
+# OpenBioMedAgent — Fork 维护规范
 
 > 本文件位于 `core/dev` 分支。三层结构的导航卡片。  
 > 累了/慌了/忘了的时候,先看这一页。
@@ -11,7 +11,7 @@
 |---|---|---|
 | `sync/dev` | 上游 `anomalyco/opencode` 的纯镜像 | 你的任何改动 |
 | `core/dev` | 改 OpenCode 原文件的品牌化(logo、文案、默认 prompt、XDG 路径) | 新功能、业务代码 |
-| `product/dev` | 新增目录的业务代码(`biomedical/`、`openbiomedclaw-tools/` 等) | 改 OpenCode 原文件 |
+| `product/dev` | 新增目录的业务代码(`biomedical/`、`openbiomedagent-tools/` 等) | 改 OpenCode 原文件 |
 
 **判断口诀**:
 - 改的是 OpenCode 原本就有的文件 → `core/dev`
@@ -34,7 +34,7 @@
 | `[doc]` | 改文档 | 看文档归属哪层 |
 
 **示例**:
-- `[brand] Replace OpenCode → OpenBioMedClaw in README header`
+- `[brand] Replace OpenCode → OpenBioMedAgent in README header`
 - `[biomed] Add PubMed search MCP tool`
 - `[upstream] Merge upstream v1.1.0, resolved 8 conflicts`
 - `[chore] gitignore: add NOTES.md`
