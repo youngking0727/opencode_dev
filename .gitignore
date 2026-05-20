@@ -31,3 +31,9 @@ logs/
 *.bun-build
 tsconfig.tsbuildinfo
 NOTES.md
+
+# === OpenBioMedAgent fork: local-only, not for upstream ===
+# 本地开发笔记/草稿(中英文文档,个人留存)
+docs-local/
+# Claude Code 测试沙盒(自用,不进版本管理)
+.claude/
